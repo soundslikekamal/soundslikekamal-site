@@ -8,9 +8,7 @@ export const metadata = {
   title: "Get In Touch — Kamal Kamruddin",
 };
 
-// TODO: replace with Kamal's real scheduling link (Cal.com / Calendly / Google
-// Calendar appointment schedule) once provided.
-const BOOKING_URL = "#";
+const BOOKING_URL = "https://calendar.notion.so/meet/kamalkamruddin/mx1ln4pfo";
 
 export default function ContactPage() {
   return (
@@ -36,9 +34,14 @@ export default function ContactPage() {
           <p className={styles.body}>to chat about your project.</p>
 
           <div className={styles.bookingWidget}>
-            Scheduling widget coming soon.
+            Pick a time that works for you.
             <br />
-            <a className={styles.bookingCta} href={BOOKING_URL}>
+            <a
+              className={styles.bookingCta}
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Book a call
             </a>
           </div>

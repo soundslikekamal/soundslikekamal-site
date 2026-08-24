@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "Kamal Kamruddin — Creative Music & Sound Services",
   description:
     "Kamal Kamruddin is a London-based composer and sound designer. Music composition, sound design, mixing, creative music editing, and audio restoration for moving image.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
