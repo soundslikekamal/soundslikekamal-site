@@ -1,0 +1,14 @@
+.callout {
+  background: var(--color-gray-bg-soft);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.spacer {
+  background: var(--color-gray-bg);
+  border-radius: var(--radius-md);
+  height: 34px;
+}

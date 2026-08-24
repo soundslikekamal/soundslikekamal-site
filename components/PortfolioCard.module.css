@@ -1,0 +1,43 @@
+.card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.body {
+  padding: 12px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.client {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}

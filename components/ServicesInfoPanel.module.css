@@ -1,0 +1,49 @@
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+}
+
+.services {
+  background: var(--color-yellow-bg);
+}
+
+.info {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.heading {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.linkRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.linkRow a {
+  text-decoration: underline;
+}

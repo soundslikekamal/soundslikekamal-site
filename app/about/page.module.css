@@ -1,0 +1,55 @@
+.columns {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portrait {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  filter: grayscale(1);
+  margin-bottom: 20px;
+}
+
+.portraitImg {
+  object-fit: cover;
+}
+
+.tagline {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.9;
+}
+
+.taglineLine {
+  display: block;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+.bioIntro {
+  font-weight: 700;
+}
+
+.ctaBox {
+  background: var(--color-gray-bg-soft);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  font-size: 13.5px;
+}

@@ -1,0 +1,14 @@
+.shell {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .shell {
+    padding: 40px 18px 60px;
+  }
+}

@@ -1,0 +1,97 @@
+:root {
+  /* Core surfaces */
+  --color-bg: #ffffff;
+  --color-text: #2b2b28;
+  --color-text-muted: #6b6b64;
+
+  /* Notion-style callout / divider grays */
+  --color-gray-bg: #f1f0ee;
+  --color-gray-bg-soft: #f9f8f6;
+  --color-border: #e7e6e4;
+
+  /* Panel accents */
+  --color-yellow-bg: #f9f3db;
+
+  /* Accent (links, emphasis) */
+  --color-accent: #d05148;
+  --color-accent-hover: #b8382f;
+
+  /* Portfolio card pastel backgrounds (Notion page colors) */
+  --card-purple: #f3ebfa;
+  --card-purple-strong: #dfcbed;
+  --card-peach: #fbebde;
+  --card-yellow: #f9f3db;
+  --card-pink: #fce8e7;
+  --card-blue: #e3edf7;
+
+  /* Tag pill colors (Notion multi-select) */
+  --tag-purple-bg: #e8d9f3;
+  --tag-purple-text: #6b4a8a;
+  --tag-green-bg: #d1d5d8;
+  --tag-green-text: #38493f;
+  --tag-orange-bg: #f0cdb2;
+  --tag-orange-text: #82500f;
+  --tag-yellow-bg: #eee0ae;
+  --tag-yellow-text: #77700f;
+  --tag-blue-bg: #cbdff2;
+  --tag-blue-text: #275f8a;
+  --tag-pink-bg: #f5d4e3;
+  --tag-pink-text: #9c3f65;
+  --tag-red-bg: #f5d3d0;
+  --tag-red-text: #a13a30;
+
+  --radius-md: 10px;
+  --radius-sm: 6px;
+  --content-max-width: 900px;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--color-border);
+}
+
+a:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}

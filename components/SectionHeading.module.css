@@ -1,0 +1,9 @@
+.heading {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 16px;
+}

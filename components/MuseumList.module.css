@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.arrow {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.entry {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.entryTitle {
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.entryLocation {
+  color: var(--color-text-muted);
+}
