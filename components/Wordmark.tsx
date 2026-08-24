@@ -1,43 +1,33 @@
+import Image from "next/image";
 import styles from "./Wordmark.module.css";
 
-/** Small "KK" logo mark, top of homepage — recreated as inline SVG. */
+/** Small "KK" logo mark, top of homepage — original double-exposure artwork. */
 export function KKLogo() {
   return (
-    <svg
-      viewBox="0 0 100 100"
+    <Image
+      src="/kk-logo.png"
+      alt="KK"
+      width={312}
+      height={308}
       className={styles.logo}
-      aria-hidden="true"
-      fill="none"
-      stroke="var(--color-text)"
-      strokeWidth="6"
-      strokeLinecap="square"
-    >
-      {/* Left K */}
-      <line x1="10" y1="15" x2="10" y2="85" />
-      <line x1="10" y1="50" x2="38" y2="15" />
-      <line x1="10" y1="50" x2="38" y2="85" />
-      {/* Right K, mirrored/overlapping */}
-      <line x1="55" y1="15" x2="55" y2="85" />
-      <line x1="55" y1="50" x2="83" y2="15" />
-      <line x1="55" y1="50" x2="83" y2="85" />
-    </svg>
+      priority
+    />
   );
 }
 
 /**
- * "KAMAL / KAMRUDDIN" hero wordmark — replicates the live site's overlapping,
- * outlined double-exposure effect: two lines of bold outlined type, left-aligned,
- * stacked with negative margin so "KAMAL" overlaps the top of "KAMRUDDIN".
+ * "KAMAL / KAMRUDDIN" hero wordmark — original overlapping, outlined
+ * double-exposure artwork.
  */
 export function Wordmark() {
   return (
-    <div className={styles.wordmark} aria-label="Kamal Kamruddin">
-      <div className={`${styles.line} ${styles.lineTop}`} aria-hidden="true">
-        KAMAL
-      </div>
-      <div className={`${styles.line} ${styles.lineBottom}`} aria-hidden="true">
-        KAMRUDDIN
-      </div>
-    </div>
+    <Image
+      src="/kamal-wordmark.png"
+      alt="Kamal Kamruddin"
+      width={2045}
+      height={514}
+      className={styles.wordmark}
+      priority
+    />
   );
 }
