@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./PortfolioCard.module.css";
 import { TagPill } from "./TagPill";
 import type { CardColor, PortfolioItem } from "@/lib/types";
@@ -13,7 +14,8 @@ const CARD_BG: Record<CardColor, string> = {
 
 export function PortfolioCard({ item }: { item: PortfolioItem }) {
   return (
-    <div
+    <Link
+      href={`/portfolio/${item.id}`}
       className={styles.card}
       style={{ backgroundColor: CARD_BG[item.cardColor] }}
     >
@@ -39,6 +41,6 @@ export function PortfolioCard({ item }: { item: PortfolioItem }) {
           </div>
         )}
       </div>
-    </div>
+    </Link>
   );
 }

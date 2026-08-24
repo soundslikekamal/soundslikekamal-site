@@ -154,6 +154,13 @@ export async function getPortfolioItemsByService(
   return items.filter((i) => i.services.includes(service));
 }
 
+export async function getPortfolioItemById(
+  id: string
+): Promise<PortfolioItem | null> {
+  const items = await getPortfolioItems();
+  return items.find((i) => i.id === id) ?? null;
+}
+
 export async function getEditingReleases(): Promise<EditingReleaseItem[]> {
   const pages = await queryAllPages(MUSIC_EDITING_DB_ID);
   return pages.map(mapEditingRelease);

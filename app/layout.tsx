@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Archivo } from "next/font/google";
+import { Source_Code_Pro, Archivo } from "next/font/google";
 import "./globals.css";
 
-const mono = JetBrains_Mono({
+const mono = Source_Code_Pro({
   variable: "--font-mono",
   subsets: ["latin"],
-  weight: ["400", "500", "700", "800"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const display = Archivo({

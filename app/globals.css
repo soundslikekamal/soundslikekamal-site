@@ -43,7 +43,7 @@
   --radius-md: 10px;
   --radius-sm: 6px;
   --content-max-width: 900px;
-  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-mono: "Source Code Pro", ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 
 * {
