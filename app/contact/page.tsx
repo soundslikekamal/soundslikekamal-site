@@ -33,12 +33,17 @@ export default function ContactPage() {
           </div>
           <p className={styles.body}>to chat about your project.</p>
 
-          <div className={styles.bookingEmbed}>
-            <iframe
-              src={BOOKING_URL}
-              title="Book a call with Kamal Kamruddin"
-              loading="lazy"
-            />
+          <div className={styles.bookingWidget}>
+            Pick a time that works for you.
+            <br />
+            <a
+              className={styles.bookingCta}
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a call
+            </a>
           </div>
         </div>
       </div>
