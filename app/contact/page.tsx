@@ -20,9 +20,9 @@ export default function ContactPage() {
         <div>
           <div className={styles.blockHeading}>Message me ↗</div>
           <p className={styles.body}>
-            by sending me an email at{" "}
-            <a href="mailto:kdk.fxwax@slmail.me">kdk.fxwax@slmail.me</a> and
-            leaving your contact details.
+            by sending me an email{" "}
+            <a href="mailto:kdk.fxwax@slmail.me">HERE</a> and leaving your
+            contact details.
           </p>
         </div>
 
@@ -33,17 +33,12 @@ export default function ContactPage() {
           </div>
           <p className={styles.body}>to chat about your project.</p>
 
-          <div className={styles.bookingWidget}>
-            Pick a time that works for you.
-            <br />
-            <a
-              className={styles.bookingCta}
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book a call
-            </a>
+          <div className={styles.bookingEmbed}>
+            <iframe
+              src={BOOKING_URL}
+              title="Book a call with Kamal Kamruddin"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
